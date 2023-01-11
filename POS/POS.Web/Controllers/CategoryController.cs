@@ -15,70 +15,80 @@ namespace POS.Web.Controllers
 
 
         // GET: CategoryController
-        public ActionResult Index()
+        [HttpGet]
+        public IActionResult Index()
         {
             var Data = _service.GetCategories();
             return View(Data);
         }
 
         // GET: CategoryController/Details/5
-        public ActionResult Details(int id)
+        [HttpGet]
+        public IActionResult Details(int id)
         {
-            return View();
+            var CatDetail = _service.GetCategoryById(id);
+            return View(CatDetail);
         }
 
         // GET: CategoryController/Create
-        public ActionResult Create()
+        [HttpGet]
+        public IActionResult Create()
         {
             return View();
         }
 
         // POST: CategoryController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public IActionResult Create(CategoryEntity request)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            _service.SaveCategory(request);
+            return RedirectToAction("Index");
+
+            //try
+            //{
+            //    _service.Save(request);
+            //    return RedirectToAction(nameof(Index));
+            //}
+            //catch
+            //{
+            //    return View(Index);
+            //}
         }
 
         // GET: CategoryController/Edit/5
-        public ActionResult Edit(int id)
+        [HttpGet]
+        public IActionResult Edit(int id)
         {
             return View();
         }
 
         // POST: CategoryController/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public IActionResult Update(CategoryEntity request)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            _service.UpdateCategory(request);
+            return RedirectToAction("Index");
+
+            //try
+            //{
+            //    return RedirectToAction(nameof(Index));
+            //}
+            //catch
+            //{
+            //    return View();
+            //}
         }
 
         // GET: CategoryController/Delete/5
-        public ActionResult Delete(int id)
+        [HttpGet]
+        public IActionResult Delete(int id)
         {
             return View();
         }
 
         // POST: CategoryController/Delete/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public IActionResult Delete(int id, IFormCollection collection)
         {
             try
             {

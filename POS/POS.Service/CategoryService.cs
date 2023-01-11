@@ -1,4 +1,5 @@
 ﻿using POS.Repository;
+using Microsoft.AspNetCore.Mvc;
 
 namespace POS.Service
 {
@@ -15,11 +16,23 @@ namespace POS.Service
             return _context.Categories.ToList();
         }
 
-        public CategoryEntity GetCategory(int id)
+        public CategoryEntity GetCategoryById(int id)
         {
-            return _context.Categories.SingleOrDefault();
+            return _context.Categories.Find(id);
         }
 
+        public List<CategoryEntity> SaveCategory([Bind("CategoryName, Description, Picture")] CategoryEntity category)
+        {
+            _context.Categories.Add(category);
+            _context.SaveChanges();
+            return GetCategories();
+        }
 
+        public List<CategoryEntity> UpdateCategory([Bind("CategoryName, Description, Picture")] CategoryEntity category)
+        {
+            _context.Categories.Update(category);
+            _context.SaveChanges();
+            return GetCategories();
+        }
     }
 }

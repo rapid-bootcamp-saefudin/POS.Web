@@ -1,15 +1,15 @@
 ﻿@model POS.Repository.CategoryEntity
 
 @{
-    ViewBag.Title = "Add New Category";
+    ViewBag.Title = "Edit Category";
     Layout = "_Layout";
 }
 
 <div class="card-header">
-    <h3>Add New Category</h3>
+    <h3>Edit Category</h3>
 </div>
 <div class="card-body">
-    <form asp-controller="Category" asp-action="Create" method="post">
+    <form asp-controller="Category" asp-action="Update" method="post">
         <div class="row">
             <div class="col-sm-4">
                 <div class="form-group">
