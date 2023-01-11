@@ -1,0 +1,14 @@
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\bin\Debug\net7.0\POS.Repository.deps.json
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\bin\Debug\net7.0\POS.Repository.runtimeconfig.json
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\bin\Debug\net7.0\POS.Repository.dll
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\bin\Debug\net7.0\POS.Repository.pdb
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\obj\Debug\net7.0\POS.Repository.csproj.AssemblyReference.cache
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\obj\Debug\net7.0\POS.Repository.GeneratedMSBuildEditorConfig.editorconfig
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\obj\Debug\net7.0\POS.Repository.AssemblyInfoInputs.cache
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\obj\Debug\net7.0\POS.Repository.AssemblyInfo.cs
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\obj\Debug\net7.0\POS.Repository.csproj.CoreCompileInputs.cache
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\obj\Debug\net7.0\POS.Repository.dll
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\obj\Debug\net7.0\refint\POS.Repository.dll
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\obj\Debug\net7.0\POS.Repository.pdb
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\obj\Debug\net7.0\POS.Repository.genruntimeconfig.cache
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.DataContext\obj\Debug\net7.0\ref\POS.Repository.dll

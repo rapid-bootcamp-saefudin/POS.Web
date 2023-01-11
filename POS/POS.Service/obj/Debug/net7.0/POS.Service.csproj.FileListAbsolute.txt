@@ -1,0 +1,14 @@
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\bin\Debug\net7.0\POS.Service.deps.json
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\bin\Debug\net7.0\POS.Service.runtimeconfig.json
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\bin\Debug\net7.0\POS.Service.dll
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\bin\Debug\net7.0\POS.Service.pdb
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.csproj.AssemblyReference.cache
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.AssemblyInfoInputs.cache
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.AssemblyInfo.cs
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.csproj.CoreCompileInputs.cache
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.dll
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\refint\POS.Service.dll
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.pdb
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.genruntimeconfig.cache
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\ref\POS.Service.dll
