@@ -1,0 +1,42 @@
+﻿@model POS.Repository.CategoryEntity
+
+@{
+    ViewBag.Title = "Add New Category";
+    Layout = "_Layout";
+}
+
+<div class="card-header">
+    <h3>Add New Category</h3>
+</div>
+<div class="card-body">
+    <form asp-controller="Category" asp-action="Create" method="post">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label asp-for="CategoryName" class="floating-label" for="CategoryName">Category Name</label>
+                    <input asp-for="CategoryName" class="form-control" id="CategoryName" required />
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label asp-for="Description" class="floating-label" for="Description">Description</label>
+                    <input asp-for="Description" class="form-control" id="Description" required />
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label asp-for="Picture" class="floating-label" for="Picture">Picture</label>
+                    <input asp-for="Picture" class="form-control" id="Picture" type="file" />
+                </div>
+            </div>
+        </div>
+        <a type="reset" asp-controller="Category" asp-action="GetAll" class="btn btn-secondary">Cancel</a>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

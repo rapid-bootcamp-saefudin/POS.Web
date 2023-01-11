@@ -14,5 +14,12 @@ namespace POS.Service
         {
             return _context.Categories.ToList();
         }
+
+        public CategoryEntity GetCategory(int id)
+        {
+            return _context.Categories.SingleOrDefault();
+        }
+
+
     }
 }

@@ -1,0 +1,44 @@
+﻿@model POS.Repository.CategoryEntity
+
+@{
+    ViewBag.Title = "Category Detail";
+    Layout = "_Layout";
+}
+
+<div class="card-header">
+    <h3>Category Detail</h3>
+</div>
+<div class="card-body">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="form-group row">
+                <label for="catId" class="col-sm-3 col-form-label"><strong>ID</strong></label>
+                <div class="col-sm-9">
+                    <label id="catId" class="form-control-plaintext">@Model.Id</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="catName" class="col-sm-3 col-form-label"><strong>Category Name</strong></label>
+                <div class="col-sm-9">
+                    <label id="catName" class="form-control-plaintext">@Model.CategoryName</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="catDescription" class="col-sm-3 col-form-label"><strong>Description</strong></label>
+                <div class="col-sm-9">
+                    <label id="catDescription" class="form-control-plaintext">@Model.Description</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="catPicture" class="col-sm-3 col-form-label"><strong>Picture</strong></label>
+                <div class="col-sm-9">
+                    <label id="catPicture" class="form-control-plaintext">@Model.Picture</label>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+</div>
