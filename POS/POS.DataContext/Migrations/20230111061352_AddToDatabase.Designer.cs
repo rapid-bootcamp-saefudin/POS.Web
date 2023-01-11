@@ -10,7 +10,7 @@ using POS.Repository;
 
 namespace POS.Repository.Migrations
 {
-    [DbContext(typeof(AppContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20230111061352_AddToDatabase")]
     partial class AddToDatabase
     {

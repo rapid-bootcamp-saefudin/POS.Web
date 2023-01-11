@@ -12,3 +12,6 @@ F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\refin
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.pdb
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.genruntimeconfig.cache
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\ref\POS.Service.dll
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\bin\Debug\net7.0\POS.Repository.dll
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\bin\Debug\net7.0\POS.Repository.pdb
+F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Service\obj\Debug\net7.0\POS.Service.csproj.CopyComplete

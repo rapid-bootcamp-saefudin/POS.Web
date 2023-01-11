@@ -102,7 +102,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.DataContext\\POS.Repository.csproj": {
+                "projectPath": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.DataContext\\POS.Repository.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -210,6 +214,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
