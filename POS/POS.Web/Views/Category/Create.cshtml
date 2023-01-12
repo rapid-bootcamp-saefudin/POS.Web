@@ -1,5 +1,4 @@
-﻿@model POS.Repository.CategoryEntity
-
+﻿@model POS.ViewModel.CategoryModel
 @{
     ViewBag.Title = "Add New Category";
     Layout = "_Layout";
@@ -14,19 +13,22 @@
             <div class="col-sm-4">
                 <div class="form-group">
                     <label asp-for="CategoryName" class="floating-label" for="CategoryName">Category Name</label>
-                    <input asp-for="CategoryName" class="form-control" id="CategoryName" required />
+                    <input asp-for="CategoryName" class="form-control" id="CategoryName" />
+                    <span asp-validation-for="CategoryName" class="text-danger"></span>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
                     <label asp-for="Description" class="floating-label" for="Description">Description</label>
-                    <input asp-for="Description" class="form-control" id="Description" required />
+                    <input asp-for="Description" class="form-control" id="Description" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
-                    <label asp-for="Picture" class="floating-label" for="Picture">Picture</label>
-                    <input asp-for="Picture" class="form-control" id="Picture" />
+                    <label asp-for="Picture" class="floating-label" for="CatPicture">Picture</label>
+                    <input asp-for="Picture" class="form-control" id="CatPicture" />
+                    <span asp-validation-for="Picture" class="text-danger"></span>
                 </div>
             </div>
         </div>

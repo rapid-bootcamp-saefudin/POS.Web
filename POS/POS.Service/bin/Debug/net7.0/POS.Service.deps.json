@@ -1793,10 +1793,16 @@
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.13",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.13",
+          "POS.ViewModel": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.2"
         },
         "runtime": {
           "POS.Repository.dll": {}
+        }
+      },
+      "POS.ViewModel/1.0.0": {
+        "runtime": {
+          "POS.ViewModel.dll": {}
         }
       }
     }
@@ -3005,6 +3011,11 @@
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
     "POS.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "POS.ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

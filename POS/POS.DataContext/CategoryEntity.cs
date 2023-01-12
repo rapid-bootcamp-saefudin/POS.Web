@@ -23,5 +23,14 @@ namespace POS.Repository
 
         //
         public ICollection<ProductEntity> Products { get; set; }
+
+        //
+        public CategoryEntity() { }
+        public CategoryEntity(POS.ViewModel.CategoryModel vmodel)
+        {
+            CategoryName = vmodel.CategoryName;
+            Description = vmodel.Description;
+            Picture = vmodel.Picture;
+        }
     }
 }
