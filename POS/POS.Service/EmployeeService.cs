@@ -26,9 +26,11 @@ namespace POS.Service
             return _context.Employees.Find(id);
         }
 
-        public List<EmployeeEntity> SaveEmployee([Bind("")]EmployeeEntity employee)
+        public List<EmployeeEntity> SaveEmployee([Bind("LastName, FirstName, Title, TitleOfCourtesy, ")]EmployeeEntity employee)
         {
-
+            _context.Employees.Add(employee);
+            _context.SaveChanges();
+            return GetEmployees();
         }
     }
 }
