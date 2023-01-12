@@ -43,23 +43,14 @@ namespace POS.Web.Controllers
         {
             _service.SaveCategory(request);
             return RedirectToAction("Index");
-
-            //try
-            //{
-            //    _service.Save(request);
-            //    return RedirectToAction(nameof(Index));
-            //}
-            //catch
-            //{
-            //    return View(Index);
-            //}
         }
 
         // GET: CategoryController/Edit/5
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            return View();
+            var CatEdit = _service.GetCategoryById(id);
+            return View(CatEdit);
         }
 
         // POST: CategoryController/Edit/5
@@ -67,37 +58,16 @@ namespace POS.Web.Controllers
         public IActionResult Update(CategoryEntity request)
         {
             _service.UpdateCategory(request);
+            //return Redirect("Index");
             return RedirectToAction("Index");
-
-            //try
-            //{
-            //    return RedirectToAction(nameof(Index));
-            //}
-            //catch
-            //{
-            //    return View();
-            //}
         }
 
         // GET: CategoryController/Delete/5
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            return View();
-        }
-
-        // POST: CategoryController/Delete/5
-        [HttpPost]
-        public IActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            _service.DeleteCategoryById(id);
+            return RedirectToAction("Index");
         }
     }
 }

@@ -5,6 +5,778 @@
       "PackagePath": "staticwebassets\\POS.Web.bundle.scp.css"
     },
     {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\css\\plugins\\animate.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\animate.min.css"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\css\\plugins\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\css\\plugins\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\css\\plugins\\prism-coy.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\prism-coy.css"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\feather.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\feather.eot"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\feather.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\feather.svg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\feather.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\feather.ttf"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\feather.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\feather.woff"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOUehpOqc.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOUehpOqc.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOVuhpOqc.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOVuhpOqc.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXuhpOqc.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXuhpOqc.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFUZ0bbck.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFUZ0bbck.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFVZ0b.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFVZ0b.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFVp0bbck.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFVp0bbck.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFW50bbck.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFW50bbck.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWJ0bbck.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWJ0bbck.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWZ0bbck.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWZ0bbck.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWp0bbck.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWp0bbck.woff2"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\pct.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\pct.eot"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\pct.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\pct.svg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\pct.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\pct.ttf"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\fonts\\pct.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\pct.woff"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\auth\\auth-logo-dark.png",
+      "PackagePath": "staticwebassets\\assets\\images\\auth\\auth-logo-dark.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\auth\\auth-logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\auth\\auth-logo.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\browser\\chrome.png",
+      "PackagePath": "staticwebassets\\assets\\images\\browser\\chrome.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\browser\\firefox.png",
+      "PackagePath": "staticwebassets\\assets\\images\\browser\\firefox.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\browser\\ie.png",
+      "PackagePath": "staticwebassets\\assets\\images\\browser\\ie.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\browser\\opera.png",
+      "PackagePath": "staticwebassets\\assets\\images\\browser\\opera.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\browser\\safari.png",
+      "PackagePath": "staticwebassets\\assets\\images\\browser\\safari.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\cd-arrow.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\cd-arrow.svg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\close.png",
+      "PackagePath": "staticwebassets\\assets\\images\\close.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\complete.png",
+      "PackagePath": "staticwebassets\\assets\\images\\complete.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon.ico"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\img-grd-gal-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\img-grd-gal-1.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\img-grd-gal-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\img-grd-gal-2.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\img-grd-gal-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\img-grd-gal-3.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\img-grd-gal-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\img-grd-gal-4.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\img-grd-gal-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\img-grd-gal-5.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\img-grd-gal-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\img-grd-gal-6.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\masonry-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\masonry-1.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\masonry-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\masonry-2.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\masonry-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\masonry-3.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\masonry-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\masonry-4.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\masonry-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\masonry-5.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\masonry-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\masonry-6.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\masonry-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\masonry-7.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\gallery-grid\\masonry-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery-grid\\masonry-8.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\loading.gif"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\logo-dark.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-dark.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\logo-docs.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-docs.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\logo-icon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-icon.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\logo-old.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-old.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\logo-thumb.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-thumb.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\next.png",
+      "PackagePath": "staticwebassets\\assets\\images\\next.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\prev.png",
+      "PackagePath": "staticwebassets\\assets\\images\\prev.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\slider\\img-slide-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\img-slide-1.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\slider\\img-slide-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\img-slide-2.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\slider\\img-slide-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\img-slide-3.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\slider\\img-slide-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\img-slide-4.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\slider\\img-slide-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\img-slide-5.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\slider\\img-slide-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\img-slide-6.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\slider\\img-slide-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\img-slide-7.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\user\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\avatar-1.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\user\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\avatar-2.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\user\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\avatar-3.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\user\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\avatar-4.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\user\\avatar-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\avatar-5.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\user\\cover.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\cover.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\user\\img-avatar-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\img-avatar-1.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\user\\img-avatar-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\img-avatar-2.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\user\\img-avatar-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\img-avatar-3.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\AUSTRALIA.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\AUSTRALIA.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\BRAZIL.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\BRAZIL.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\GERMANY.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\GERMANY.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\PHONE1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\PHONE1.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\PHONE2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\PHONE2.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\PHONE3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\PHONE3.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\PHONE4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\PHONE4.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\UK.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\UK.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\USA.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\USA.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\dashborad-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\dashborad-1.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\dashborad-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\dashborad-2.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\dashborad-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\dashborad-3.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\dashborad-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\dashborad-4.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\dashborad-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\dashborad-5.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\emoticon.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\emoticon.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\img-round1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\img-round1.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\p1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\p1.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\p2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\p2.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\p3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\p3.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\p4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\p4.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\profile-person1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\profile-person1.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\slider5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\slider5.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\slider6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\slider6.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\slider7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\slider7.jpg"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\images\\widget\\user-blur-bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\widget\\user-blur-bg.png"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\analytics.js",
+      "PackagePath": "staticwebassets\\assets\\js\\analytics.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\analytics.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\analytics.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\horizontal-menu.js",
+      "PackagePath": "staticwebassets\\assets\\js\\horizontal-menu.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\menu-setting.js",
+      "PackagePath": "staticwebassets\\assets\\js\\menu-setting.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\menu-setting.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\menu-setting.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\TweenMax.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\TweenMax.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\ac-alert.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\ac-alert.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\ac-datepicker.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\ac-datepicker.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\ac-lightbox.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\ac-lightbox.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\ac-notification.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\ac-notification.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\ac-rangeslider.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\ac-rangeslider.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\ac-rating.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\ac-rating.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\chart-apex.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\chart-apex.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\chart-chart-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\chart-chart-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\chart-highchart-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\chart-highchart-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\chart-morris-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\chart-morris-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\chart-peity-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\chart-peity-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\chart.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\chart.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\dashboard-analytics.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\dashboard-analytics.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\dashboard-crm.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\dashboard-crm.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\dashboard-help.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\dashboard-help.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\dashboard-main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\dashboard-main.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\dashboard-project.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\dashboard-project.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\dashboard-sale.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\dashboard-sale.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-advance-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-advance-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-api-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-api-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-autofill-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-autofill-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-basic-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-basic-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-buttons-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-buttons-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-column-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-column-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-export-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-export-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-header-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-header-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-key-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-key-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-plugin-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-plugin-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-reorder-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-reorder-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-responsive-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-responsive-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-row-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-row-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-scroller-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-scroller-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-select-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-select-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-source-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-source-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-styling-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-styling-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\data-table-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\data-table-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\editable-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\editable-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\form-advance-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\form-advance-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\form-masking-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\form-masking-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\form-picker-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\form-picker-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\form-select-custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\form-select-custom.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\form-validation.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\form-validation.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\google-maps.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\google-maps.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\invoice-list.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\invoice-list.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\jquery.knob-custom.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\jquery.knob-custom.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\jquery.wavify.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\jquery.wavify.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\map-api.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\map-api.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\notify-event.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\notify-event.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\page-croper.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\page-croper.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\task-board.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\task-board.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\todo.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\todo.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pages\\widget-data.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\widget-data.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pcoded.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pcoded.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\pcoded.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pcoded.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\plugins\\apexcharts.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\apexcharts.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\plugins\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\plugins\\gmaps.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\gmaps.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\plugins\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery-ui.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\plugins\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\plugins\\prism.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\prism.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\ripple.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ripple.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\uikit.js",
+      "PackagePath": "staticwebassets\\assets\\js\\uikit.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\uikit.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\uikit.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\vendor-all.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor-all.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\vendor-all.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor-all.min.js"
+    },
+    {
+      "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\assets\\js\\waves.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\waves.min.js"
+    },
+    {
       "Id": "F:\\bootcamp\\.net\\bootcamp-project\\POS.Web\\POS\\POS.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

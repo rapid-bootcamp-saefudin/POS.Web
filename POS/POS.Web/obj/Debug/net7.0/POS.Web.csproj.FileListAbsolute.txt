@@ -247,7 +247,6 @@ F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\bin\Debug\net7.0\Microsoft
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
-F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\obj\Debug\net7.0\POS.Web.MvcApplicationPartsAssemblyInfo.cs
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\bin\Debug\net7.0\POS.Web.staticwebassets.runtime.json
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\obj\Debug\net7.0\staticwebassets\msbuild.POS.Web.Microsoft.AspNetCore.StaticWebAssets.props
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\obj\Debug\net7.0\staticwebassets\msbuild.build.POS.Web.props

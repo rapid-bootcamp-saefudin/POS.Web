@@ -28,9 +28,21 @@ namespace POS.Service
             return GetCategories();
         }
 
-        public List<CategoryEntity> UpdateCategory([Bind("CategoryName, Description, Picture")] CategoryEntity category)
+        public List<CategoryEntity> UpdateCategory([Bind("Id, CategoryName, Description, Picture")] CategoryEntity category)
         {
             _context.Categories.Update(category);
+            _context.SaveChanges();
+            return GetCategories();
+        }
+
+        public List<CategoryEntity> DeleteCategoryById(int id)
+        {
+            var category = _context.Categories.Find(id);
+            if (category == null) 
+            {
+                return GetCategories();
+            }
+            _context.Categories.Remove(category);
             _context.SaveChanges();
             return GetCategories();
         }
