@@ -7,95 +7,76 @@ using POS.ViewModel;
 
 namespace POS.Web.Controllers
 {
-    public class CategoryController : Controller
+    public class SupplierController : Controller
     {
-        private readonly CategoryService _service;
-        public CategoryController(ApplicationDbContext context)
+        private readonly SupplierService _service;
+        public SupplierController(ApplicationDbContext context)
         {
-            _service = new CategoryService(context);
+            _service = new SupplierService(context);
         }
 
-
-        // GET: CategoryController
+        // GET: SupplierController
         [HttpGet]
         public IActionResult Index()
         {
-            var Data = _service.GetCategories();
+            var Data = _service.GetSuppliers();
             return View(Data);
         }
 
-        // GET: CategoryController/Details/5
+        // GET: SupplierController/Details/5
         [HttpGet]
         public IActionResult Details(int id)
         {
-            var CatDetail = _service.GetCategoryById(id);
+            var CatDetail = _service.GetSupplierById(id);
             return View(CatDetail);
         }
 
-        // GET: CategoryController/Create
+        // GET: SupplierController/Create
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult AddModal()
         {
-            return View();
+            return PartialView("Create");
         }
 
-        // POST: CategoryController/Create
+        // POST: SupplierController/Create
         [HttpPost]
-        //public IActionResult Create(CategoryEntity request)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        _service.SaveCategory(request);
-        //    }
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Create(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Create([Bind("CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage")] SupplierModel request)
         {
             if (ModelState.IsValid)
             {
-                _service.SaveCategory(new CategoryEntity(request));
+                _service.AddSupplier(new SupplierEntity(request));
                 return Redirect("Index");
             }
             return View("Create", request);
         }
 
-        // GET: CategoryController/Edit/5
+        // GET: SupplierController/Edit/5
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var CatEdit = _service.GetCategoryById(id);
+            var CatEdit = _service.GetSupplierById(id);
             return View(CatEdit);
         }
 
-        // POST: CategoryController/Edit/5
+        // POST: SupplierController/Edit/5
         [HttpPost]
-        //public IActionResult Update(CategoryEntity request)
-        //{
-        //    _service.UpdateCategory(request);
-        //    //return Redirect("Index");
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Update(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Update([Bind("Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage")] SupplierModel request)
         {
             if (ModelState.IsValid)
             {
-                CategoryEntity catEntity = new CategoryEntity(request);
-                catEntity.Id = request.Id;
-
-                _service.UpdateCategory(catEntity);
-                //return Redirect("Index");
-                return RedirectToAction("Index");
+                _service.UpdateSupplier(request);
+                return Redirect("Index");
             }
             return View("Edit", request);
         }
 
-        // GET: CategoryController/Delete/5
+        // GET: SupplierController/Delete/5
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            _service.DeleteCategoryById(id);
+            _service.DeleteSupplierById(id);
             return RedirectToAction("Index");
         }
     }

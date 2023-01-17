@@ -37,6 +37,24 @@ namespace POS.Repository
         [Column("home_page")]
         public string HomePage { get; set; }
 
+        //
         public ICollection<ProductEntity> Products { get; set; }
+
+        //
+        public SupplierEntity() { }
+        public SupplierEntity(POS.ViewModel.SupplierModel vmodel)
+        {
+            CompanyName = vmodel.CompanyName;
+            ContactName = vmodel.ContactName;
+            ContactTitle = vmodel.ContactTitle;
+            Address = vmodel.Address;
+            City = vmodel.City;
+            Region = vmodel.Region;
+            PostalCode = vmodel.PostalCode;
+            Country = vmodel.Country;
+            Phone = vmodel.Phone;
+            Fax = vmodel.Fax;
+            HomePage = vmodel.HomePage;
+        }
     }
 }

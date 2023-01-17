@@ -1,0 +1,35 @@
+﻿@model POS.ViewModel.CategoryModel
+
+<form asp-controller="Category" asp-action="Create" method="post">
+    <div class="col">
+        <div class="form-group">
+            <label asp-for="CategoryName" class="floating-label" for="CategoryName">Category Name</label>
+            <input asp-for="CategoryName" class="form-control" id="CategoryName" />
+            <span asp-validation-for="CategoryName" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label asp-for="Description" class="floating-label" for="Description">Description</label>
+            <textarea asp-for="Description" class="form-control" id="Description" rows="1"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label asp-for="Picture" class="floating-label" for="CatPicture">Picture</label>
+            <input asp-for="Picture" class="form-control" id="CatPicture" />
+            <span asp-validation-for="Picture" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn  btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn  btn-primary">Save</button>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

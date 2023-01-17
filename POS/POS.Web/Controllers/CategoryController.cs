@@ -15,7 +15,6 @@ namespace POS.Web.Controllers
             _service = new CategoryService(context);
         }
 
-
         // GET: CategoryController
         [HttpGet]
         public IActionResult Index()
@@ -33,14 +32,21 @@ namespace POS.Web.Controllers
         }
 
         // GET: CategoryController/Create
+        //[HttpGet]
+        //public IActionResult Create()
+        //{
+        //    return View();
+        //}
+
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult AddModal()
         {
-            return View();
+            return PartialView("_Create");
         }
 
         // POST: CategoryController/Create
-        [HttpPost]
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
         //public IActionResult Create(CategoryEntity request)
         //{
         //    if (ModelState.IsValid)
@@ -50,11 +56,13 @@ namespace POS.Web.Controllers
         //    return RedirectToAction("Index");
         //}
 
-        public IActionResult Create(CategoryModel request)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create([Bind("CategoryName, Description, Picture")] CategoryModel request)
         {
             if (ModelState.IsValid)
             {
-                _service.SaveCategory(new CategoryEntity(request));
+                _service.AddCategory(new CategoryEntity(request));
                 return Redirect("Index");
             }
             return View("Create", request);
@@ -69,7 +77,8 @@ namespace POS.Web.Controllers
         }
 
         // POST: CategoryController/Edit/5
-        [HttpPost]
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
         //public IActionResult Update(CategoryEntity request)
         //{
         //    _service.UpdateCategory(request);
@@ -77,19 +86,30 @@ namespace POS.Web.Controllers
         //    return RedirectToAction("Index");
         //}
 
-        public IActionResult Update(CategoryModel request)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Update([Bind("Id, CategoryName, Description, Picture")] CategoryModel request)
         {
             if (ModelState.IsValid)
             {
-                CategoryEntity catEntity = new CategoryEntity(request);
-                catEntity.Id = request.Id;
-
-                _service.UpdateCategory(catEntity);
-                //return Redirect("Index");
-                return RedirectToAction("Index");
+                _service.UpdateCategory(request);
+                return Redirect("Index");
             }
             return View("Edit", request);
         }
+        //public IActionResult Update(CategoryModel request)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        CategoryEntity catEntity = new CategoryEntity(request);
+        //        catEntity.Id = request.Id;
+
+        //        _service.UpdateCategory(catEntity);
+        //        //return Redirect("Index");
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View("Edit", request);
+        //}
 
         // GET: CategoryController/Delete/5
         [HttpGet]

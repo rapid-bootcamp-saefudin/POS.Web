@@ -15,10 +15,12 @@ namespace POS.Repository
         [Column("id")]
         public int Id { get; set; }
         [Column("customer_id")]
-        public CustomerEntity Customers { get; set; }
+        public int CustomerId { get; set; }
+        public CustomerEntity Customer { get; set; }
 
         [Column("employee_id")]
-        public EmployeeEntity Employees { get; set; }
+        public int EmployeeId { get; set; }
+        public EmployeeEntity Employee { get; set; }
 
         [Column("order_date")]
         public DateTime OrderDate { get; set; }

@@ -7,95 +7,76 @@ using POS.ViewModel;
 
 namespace POS.Web.Controllers
 {
-    public class CategoryController : Controller
+    public class ProductController : Controller
     {
-        private readonly CategoryService _service;
-        public CategoryController(ApplicationDbContext context)
+        private readonly ProductService _service;
+        public ProductController(ApplicationDbContext context)
         {
-            _service = new CategoryService(context);
+            _service = new ProductService(context);
         }
 
-
-        // GET: CategoryController
+        // GET: ProductController
         [HttpGet]
         public IActionResult Index()
         {
-            var Data = _service.GetCategories();
+            var Data = _service.GetProducts();
             return View(Data);
         }
 
-        // GET: CategoryController/Details/5
+        // GET: ProductController/Details/5
         [HttpGet]
         public IActionResult Details(int id)
         {
-            var CatDetail = _service.GetCategoryById(id);
+            var CatDetail = _service.GetProductById(id);
             return View(CatDetail);
         }
 
-        // GET: CategoryController/Create
+        // GET: ProductController/Create
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult AddModal()
         {
-            return View();
+            return PartialView("Create");
         }
 
-        // POST: CategoryController/Create
+        // POST: ProductController/Create
         [HttpPost]
-        //public IActionResult Create(CategoryEntity request)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        _service.SaveCategory(request);
-        //    }
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Create(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Create([Bind("ProductName, SupplierId, CategoryId, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued")] ProductModel request)
         {
             if (ModelState.IsValid)
             {
-                _service.SaveCategory(new CategoryEntity(request));
+                _service.SaveProduct(request);
                 return Redirect("Index");
             }
             return View("Create", request);
         }
 
-        // GET: CategoryController/Edit/5
+        // GET: ProductController/Edit/5
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var CatEdit = _service.GetCategoryById(id);
+            var CatEdit = _service.GetProductById(id);
             return View(CatEdit);
         }
 
-        // POST: CategoryController/Edit/5
+        // POST: ProductController/Edit/5
         [HttpPost]
-        //public IActionResult Update(CategoryEntity request)
-        //{
-        //    _service.UpdateCategory(request);
-        //    //return Redirect("Index");
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Update(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Update([Bind("Id, ProductName, SupplierId, CategoryId, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued")] ProductModel request)
         {
             if (ModelState.IsValid)
             {
-                CategoryEntity catEntity = new CategoryEntity(request);
-                catEntity.Id = request.Id;
-
-                _service.UpdateCategory(catEntity);
-                //return Redirect("Index");
-                return RedirectToAction("Index");
+                _service.UpdateProduct(request);
+                return Redirect("Index");
             }
             return View("Edit", request);
         }
 
-        // GET: CategoryController/Delete/5
+        // GET: ProductController/Delete/5
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            _service.DeleteCategoryById(id);
+            _service.DeleteProductById(id);
             return RedirectToAction("Index");
         }
     }

@@ -11,6 +11,7 @@
 <div class="card-body">
     <form asp-controller="Category" asp-action="Update" method="post">
         <div class="row">
+            <input type="hidden" asp-for="Id" />
             <div class="col-sm-4">
                 <div class="form-group">
                     <label asp-for="CategoryName" class="floating-label" for="CategoryName">Category Name</label>
@@ -20,8 +21,8 @@
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
-                    <label asp-for="Description" class="floating-label" for="Description">Description</label>
-                    <input asp-for="Description" class="form-control" id="Description" />
+                    <label asp-for="Description" class="floating-label" for="CategoryDescription">Description</label>
+                    <input asp-for="Description" class="form-control" id="CategoryDescription" />
                     <span asp-validation-for="Description" class="text-danger"></span>
                 </div>
             </div>

@@ -1,0 +1,92 @@
+﻿@model POS.ViewModel.ProductModel
+
+@{
+    ViewBag.Title = "Edit Product";
+    Layout = "_Layout";
+}
+
+<div class="card-header">
+    <h3>Edit Product</h3>
+</div>
+<div class="card-body">
+    <form asp-controller="Product" asp-action="Update" method="post">
+        <div class="row">
+            <input type="hidden" asp-for="Id" />
+            <div class="col-sm-12 mb-4">
+                <div class="form-group">
+                    <label asp-for="ProductName" class="floating-label" for="ProductName">Product Name</label>
+                    <input asp-for="ProductName" class="form-control" id="ProductName" />
+                    <span asp-validation-for="ProductName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4">
+                <div class="form-group">
+                    <label asp-for="SupplierId" class="floating-label" for="SupplierId">Supplier</label>
+                    <input asp-for="SupplierId" type="number" class="form-control" id="SupplierId" />
+                    <span asp-validation-for="SupplierId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4">
+                <div class="form-group">
+                    <label asp-for="CategoryId" class="floating-label" for="CategoryId">Category</label>
+                    <input asp-for="CategoryId" type="number" class="form-control" id="CategoryId" />
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4">
+                <div class="form-group">
+                    <label asp-for="QuantityPerUnit" class="floating-label" for="QuantityPerUnit">Quantity</label>
+                    <input asp-for="QuantityPerUnit" type="text" class="form-control" id="QuantityPerUnit" />
+                    <span asp-validation-for="QuantityPerUnit" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4">
+                <div class="form-group">
+                    <label asp-for="UnitPrice" class="floating-label" for="UnitPrice">Price</label>
+                    <input asp-for="UnitPrice" type="number" class="form-control" id="UnitPrice" />
+                    <span asp-validation-for="UnitPrice" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4">
+                <div class="form-group">
+                    <label asp-for="UnitsInStock" class="floating-label" for="UnitsInStock">In Stock</label>
+                    <input asp-for="UnitsInStock" type="number" class="form-control" id="UnitsInStock" />
+                    <span asp-validation-for="UnitsInStock" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4">
+                <div class="form-group">
+                    <label asp-for="UnitsOnOrder" class="floating-label" for="UnitsOnOrder">On Order</label>
+                    <input asp-for="UnitsOnOrder" type="number" class="form-control" id="UnitsOnOrder" />
+                    <span asp-validation-for="UnitsOnOrder" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4">
+                <div class="form-group">
+                    <label asp-for="ReorderLevel" class="floating-label" for="ReorderLevel">Reorder Level</label>
+                    <input asp-for="ReorderLevel" type="number" class="form-control" id="ReorderLevel" />
+                    <span asp-validation-for="ReorderLevel" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4">
+                <div class="form-group">
+                    <label asp-for="Discontinued" class="floating-label" for="Discontinued">Discontinued</label>
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="Discontinued">
+                        <option selected>Open this select menu</option>
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                    <span asp-validation-for="Discontinued" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <a type="reset" asp-controller="Product" asp-action="Index" class="btn btn-secondary">Cancel</a>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
