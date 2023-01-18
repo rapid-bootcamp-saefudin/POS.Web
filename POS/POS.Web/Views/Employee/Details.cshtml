@@ -1,0 +1,128 @@
+﻿@model POS.ViewModel.EmployeeModel
+
+@{
+    ViewBag.Title = "Employee Detail";
+    Layout = "_Layout";
+}
+
+<div class="card-header">
+    <h3>Employee Detail</h3>
+</div>
+<div class="card-body">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="form-group row">
+                <label for="EmployeeId" class="col-sm-3 col-form-label"><strong>ID</strong></label>
+                <div class="col-sm-9">
+                    <label id="EmployeeId" class="form-control-plaintext">@Model.Id</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="LastName" class="col-sm-3 col-form-label"><strong>Last Name</strong></label>
+                <div class="col-sm-9">
+                    <label id="LastName" class="form-control-plaintext">@Model.LastName</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="FirstName" class="col-sm-3 col-form-label"><strong>First Name</strong></label>
+                <div class="col-sm-9">
+                    <label id="FirstName" class="form-control-plaintext">@Model.FirstName</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="Title" class="col-sm-3 col-form-label"><strong>Title</strong></label>
+                <div class="col-sm-9">
+                    <label id="Title" class="form-control-plaintext">@Model.Title</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="TitleOfCourtesy" class="col-sm-3 col-form-label"><strong>Title Of Courtesy</strong></label>
+                <div class="col-sm-9">
+                    <label id="TitleOfCourtesy" class="form-control-plaintext">@Model.TitleOfCourtesy</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="Address" class="col-sm-3 col-form-label"><strong>Address</strong></label>
+                <div class="col-sm-9">
+                    <label id="Address" class="form-control-plaintext">@Model.Address</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="City" class="col-sm-3 col-form-label"><strong>City</strong></label>
+                <div class="col-sm-9">
+                    <label id="City" class="form-control-plaintext">@Model.City</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="Region" class="col-sm-3 col-form-label"><strong>Region</strong></label>
+                <div class="col-sm-9">
+                    <label id="Region" class="form-control-plaintext">@Model.Region</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="PostalCode" class="col-sm-3 col-form-label"><strong>Postal Code</strong></label>
+                <div class="col-sm-9">
+                    <label id="PostalCode" class="form-control-plaintext">@Model.PostalCode</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="Country" class="col-sm-3 col-form-label"><strong>Country</strong></label>
+                <div class="col-sm-9">
+                    <label id="Country" class="form-control-plaintext">@Model.Country</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="HomePhone" class="col-sm-3 col-form-label"><strong>Home Phone</strong></label>
+                <div class="col-sm-9">
+                    <label id="HomePhone" class="form-control-plaintext">@Model.HomePhone</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="Extension" class="col-sm-3 col-form-label"><strong>Extension</strong></label>
+                <div class="col-sm-9">
+                    <label id="Extension" class="form-control-plaintext">@Model.Extension</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="Photo" class="col-sm-3 col-form-label"><strong>Photo</strong></label>
+                <div class="col-sm-9">
+                    <label id="Photo" class="form-control-plaintext">@Model.Photo</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="Notes" class="col-sm-3 col-form-label"><strong>Notes</strong></label>
+                <div class="col-sm-9">
+                    <label id="Notes" class="form-control-plaintext">@Model.Notes</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="ReportsTo" class="col-sm-3 col-form-label"><strong>Reports To</strong></label>
+                <div class="col-sm-9">
+                    <label id="ReportsTo" class="form-control-plaintext">@Model.ReportsTo</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="PhotoPath" class="col-sm-3 col-form-label"><strong>Photo Path</strong></label>
+                <div class="col-sm-9">
+                    <label id="PhotoPath" class="form-control-plaintext">@Model.PhotoPath</label>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-﻿/*using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using POS.Repository;
@@ -7,97 +7,82 @@ using POS.ViewModel;
 
 namespace POS.Web.Controllers
 {
-    public class CategoryController : Controller
+    public class EmployeeController : Controller
     {
-        private readonly CategoryService _service;
-        public CategoryController(ApplicationDbContext context)
+        private readonly EmployeeService _service;
+        public EmployeeController(ApplicationDbContext context)
         {
-            _service = new CategoryService(context);
+            _service = new EmployeeService(context);
         }
 
 
-        // GET: CategoryController
+        // GET: EmployeeController
         [HttpGet]
         public IActionResult Index()
         {
-            var Data = _service.GetCategories();
+            var Data = _service.GetEmployees();
             return View(Data);
         }
 
-        // GET: CategoryController/Details/5
+        // GET: EmployeeController/Details/5
         [HttpGet]
         public IActionResult Details(int id)
         {
-            var CatDetail = _service.GetCategoryById(id);
-            return View(CatDetail);
+            var employee = _service.GetEmployeeById(id);
+            return View(employee);
         }
 
-        // GET: CategoryController/Create
+        // GET: EmployeeController/Create
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult AddModal()
         {
-            return View();
+            return PartialView("Create");
         }
 
-        // POST: CategoryController/Create
+        // POST: EmployeeController/Create
         [HttpPost]
-        //public IActionResult Create(CategoryEntity request)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        _service.SaveCategory(request);
-        //    }
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Create(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Create([Bind("LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Photo, Notes, ReportsTo, PhotoPath")]EmployeeModel request)
         {
             if (ModelState.IsValid)
             {
-                _service.SaveCategory(new CategoryEntity(request));
+                _service.SaveEmployee(new EmployeeEntity(request));
                 return Redirect("Index");
             }
             return View("Create", request);
         }
 
-        // GET: CategoryController/Edit/5
+        // GET: EmployeeController/Edit/5
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var CatEdit = _service.GetCategoryById(id);
-            return View(CatEdit);
+            var employee = _service.GetEmployeeById(id);
+            return View(employee);
         }
 
-        // POST: CategoryController/Edit/5
+        // POST: EmployeeController/Edit/5
         [HttpPost]
-        //public IActionResult Update(CategoryEntity request)
-        //{
-        //    _service.UpdateCategory(request);
-        //    //return Redirect("Index");
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Update(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Update([Bind("Id, LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Photo, Notes, ReportsTo, PhotoPath")] EmployeeModel request)
         {
             if (ModelState.IsValid)
             {
-                CategoryEntity catEntity = new CategoryEntity(request);
-                catEntity.Id = request.Id;
+                //EmployeeEntity catEntity = new EmployeeEntity(request);
+                //catEntity.Id = request.Id;
 
-                _service.UpdateCategory(catEntity);
+                _service.UpdateEmployee(request);
                 //return Redirect("Index");
-                return RedirectToAction("Index");
+                return Redirect("Index");
             }
             return View("Edit", request);
         }
 
-        // GET: CategoryController/Delete/5
+        // GET: EmployeeController/Delete/5
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            _service.DeleteCategoryById(id);
+            _service.DeleteEmployeeById(id);
             return RedirectToAction("Index");
         }
     }
 }
-*/

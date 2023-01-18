@@ -1,0 +1,138 @@
+﻿@model POS.ViewModel.EmployeeModel
+
+<div class="card-header">
+    <h3>Add New Employee</h3>
+</div>
+<div class="card-body">
+    <form asp-controller="Employee" asp-action="Create" method="post">
+        <div class="row">
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="LastName" class="floating-label" for="LastName">Last Name</label>
+                    <input asp-for="LastName" class="form-control" id="LastName" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="FirstName" class="floating-label" for="FirstName">First Name</label>
+                    <input asp-for="FirstName" class="form-control" id="FirstName" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="Title" class="floating-label" for="Title">Title</label>
+                    <input asp-for="Title" class="form-control" id="Title" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="TitleOfCourtesy" class="floating-label" for="TitleOfCourtesy">Title Of Courtesy</label>
+                    <input asp-for="TitleOfCourtesy" class="form-control" id="TitleOfCourtesy" />
+                    <span asp-validation-for="TitleOfCourtesy" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="BirthDate" class="floating-label" for="BirthDate">Birth Date</label>
+                    <input asp-for="BirthDate" class="form-control" id="BirthDate" />
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="HireDate" class="floating-label" for="HireDate">Hire Date</label>
+                    <input asp-for="HireDate" class="form-control" id="HireDate" />
+                    <span asp-validation-for="HireDate" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="Address" class="floating-label" for="Address">Address</label>
+                    <input asp-for="Address" class="form-control" id="Address" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="City" class="floating-label" for="City">City</label>
+                    <input asp-for="City" class="form-control" id="City" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="Region" class="floating-label" for="Region">Region</label>
+                    <input asp-for="Region" class="form-control" id="Region" />
+                    <span asp-validation-for="Region" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="PostalCode" class="floating-label" for="PostalCode">Postal Code</label>
+                    <input asp-for="PostalCode" class="form-control" id="PostalCode" />
+                    <span asp-validation-for="PostalCode" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="Country" class="floating-label" for="Country">Country</label>
+                    <input asp-for="Country" class="form-control" id="Country" />
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="HomePhone" class="floating-label" for="HomePhone">Home Phone</label>
+                    <input asp-for="HomePhone" class="form-control" id="HomePhone" />
+                    <span asp-validation-for="HomePhone" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="Extension" class="floating-label" for="Extension">Extension</label>
+                    <input asp-for="Extension" class="form-control" id="Extension" />
+                    <span asp-validation-for="Extension" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="Photo" class="floating-label" for="Photo">Photo</label>
+                    <input asp-for="Photo" class="form-control" id="Photo" />
+                    <span asp-validation-for="Photo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4">
+                <div class="form-group">
+                    <label asp-for="Notes" class="floating-label" for="Notes">Notes</label>
+                    <textarea asp-for="Notes" class="form-control" id="Notes" rows="2"></textarea>
+                    <span asp-validation-for="Notes" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="ReportsTo" class="floating-label" for="ReportsTo">Reports To</label>
+                    <input asp-for="ReportsTo" class="form-control" id="ReportsTo" />
+                    <span asp-validation-for="ReportsTo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="PhotoPath" class="floating-label" for="PhotoPath">Photo Path</label>
+                    <input asp-for="PhotoPath" class="form-control" id="PhotoPath" />
+                    <span asp-validation-for="PhotoPath" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn  btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

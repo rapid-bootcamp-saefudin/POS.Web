@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,7 +12,7 @@ namespace POS.Repository
     [Table("tbl_employees")]
     public class EmployeeEntity
     {
-        [Key]                                       
+        [Key]
         [Column("id")]
         public int Id { get; set; }
         [Column("last_name")]
@@ -51,5 +52,28 @@ namespace POS.Repository
 
         //
         public ICollection<OrderEntity> Orders { get; set; }
+
+        //
+        public EmployeeEntity() { }
+        public EmployeeEntity(EmployeeModel vmodel)
+        {
+            LastName = vmodel.LastName;
+            FirstName = vmodel.FirstName;
+            Title = vmodel.Title;
+            TitleOfCourtesy = vmodel.TitleOfCourtesy;
+            BirthDate = vmodel.BirthDate;
+            HireDate = vmodel.HireDate;
+            Address = vmodel.Address;
+            City = vmodel.City;
+            Region = vmodel.Region;
+            PostalCode = vmodel.PostalCode;
+            Country = vmodel.Country;
+            HomePhone = vmodel.HomePhone;
+            Extension = vmodel.Extension;
+            Photo = vmodel.Photo;
+            Notes = vmodel.Notes;
+            ReportsTo = vmodel.ReportsTo;
+            PhotoPath = vmodel.PhotoPath;
+        }
     }
 }
