@@ -1,4 +1,4 @@
-﻿/*using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using POS.Repository;
@@ -7,97 +7,77 @@ using POS.ViewModel;
 
 namespace POS.Web.Controllers
 {
-    public class CategoryController : Controller
+    public class ShipperController : Controller
     {
-        private readonly CategoryService _service;
-        public CategoryController(ApplicationDbContext context)
+        private readonly ShipperService _service;
+        public ShipperController(ApplicationDbContext context)
         {
-            _service = new CategoryService(context);
+            _service = new ShipperService(context);
         }
 
-
-        // GET: CategoryController
+        // GET: ShipperController
         [HttpGet]
         public IActionResult Index()
         {
-            var Data = _service.GetCategories();
+            var Data = _service.GetShippers();
             return View(Data);
         }
 
-        // GET: CategoryController/Details/5
+        // GET: ShipperController/Details/5
         [HttpGet]
         public IActionResult Details(int id)
         {
-            var CatDetail = _service.GetCategoryById(id);
-            return View(CatDetail);
+            var shippDetail = _service.GetShipperById(id);
+            return View(shippDetail);
         }
 
-        // GET: CategoryController/Create
+        // GET: ShipperController/Create
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult AddModal()
         {
-            return View();
+            return PartialView("Create");
         }
 
-        // POST: CategoryController/Create
+        // POST: ShipperController/Create
         [HttpPost]
-        //public IActionResult Create(CategoryEntity request)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        _service.SaveCategory(request);
-        //    }
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Create(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Create([Bind("CompanyName, Phone")] ShipperModel request)
         {
             if (ModelState.IsValid)
             {
-                _service.SaveCategory(new CategoryEntity(request));
+                _service.AddShipper(new ShipperEntity(request));
                 return Redirect("Index");
             }
             return View("Create", request);
         }
 
-        // GET: CategoryController/Edit/5
+        // GET: ShipperController/Edit/5
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var CatEdit = _service.GetCategoryById(id);
-            return View(CatEdit);
+            var shippEdit = _service.GetShipperById(id);
+            return View(shippEdit);
         }
 
-        // POST: CategoryController/Edit/5
+        // POST: ShipperController/Edit/5
         [HttpPost]
-        //public IActionResult Update(CategoryEntity request)
-        //{
-        //    _service.UpdateCategory(request);
-        //    //return Redirect("Index");
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Update(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Update([Bind("Id, CompanyName, Phone")] ShipperModel request)
         {
             if (ModelState.IsValid)
             {
-                CategoryEntity catEntity = new CategoryEntity(request);
-                catEntity.Id = request.Id;
-
-                _service.UpdateCategory(catEntity);
-                //return Redirect("Index");
-                return RedirectToAction("Index");
+                _service.UpdateShipper(request);
+                return Redirect("Index");
             }
             return View("Edit", request);
         }
 
-        // GET: CategoryController/Delete/5
+        // GET: ShipperController/Delete/5
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            _service.DeleteCategoryById(id);
+            _service.DeleteShipperById(id);
             return RedirectToAction("Index");
         }
     }
 }
-*/

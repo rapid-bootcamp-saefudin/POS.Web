@@ -1,0 +1,79 @@
+﻿@model IEnumerable<POS.Repository.ShipperEntity>
+
+@{
+    ViewBag.Title = "Get All Shipper";
+    Layout = "_Layout";
+}
+
+<div class="card-header">
+    <h3>Get All Shipper</h3>
+</div>
+<div class="card-body">
+    <div class="table-responsive">
+        <a asp-action="AddModal" class="btn btn-sm btn-outline-primary mt-2 mb-2" id="btn-add"><i class="feather icon-plus"></i>New Shipper</a>
+        <table class="table table-hover mb-0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Company Name</th>
+                    <th>Phone</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.CompanyName</td>
+                        <td>@item.Phone</td>
+                        <td class="text-center">
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">
+                                <i class="feather icon-info">Detail</i>
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">
+                                <i class="feather icon-edit">Edit</i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">
+                                <i class="feather icon-trash">Delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="my-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <script type="text/javascript">
+        $("#btn-add").on("click", function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: "/Shipper/AddModal",
+                type: "GET",
+                dataType: "html",
+                success: function (data) {
+                    $("#my-modal").find(".modal-body").html(data);
+                    $("#my-modal").modal("show");
+                }
+            });
+
+        });
+    </script>
+}

@@ -1,0 +1,37 @@
+﻿@model POS.ViewModel.ShipperModel
+
+@{
+    ViewBag.Title = "Shipper Detail";
+    Layout = "_Layout";
+}
+
+<div class="card-header">
+    <h3>Shipper Detail</h3>
+</div>
+<div class="card-body">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="form-group row">
+                <label for="shippId" class="col-sm-3 col-form-label"><strong>ID</strong></label>
+                <div class="col-sm-9">
+                    <label id="supId" class="form-control-plaintext">@Model.Id</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="CompanyName" class="col-sm-3 col-form-label"><strong>Company Name</strong></label>
+                <div class="col-sm-9">
+                    <label id="CompanyName" class="form-control-plaintext">@Model.CompanyName</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+                <label for="Phone" class="col-sm-3 col-form-label"><strong>Phone</strong></label>
+                <div class="col-sm-9">
+                    <label id="Phone" class="form-control-plaintext">@Model.Phone</label>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+</div>
