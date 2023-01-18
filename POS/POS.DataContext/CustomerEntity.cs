@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -37,5 +38,21 @@ namespace POS.Repository
 
         //
         public ICollection<OrderEntity> Orders { get; set;}
+
+        //
+        public CustomerEntity() { }
+        public CustomerEntity(CustomerModel vmodel)
+        {
+            CompanyName = vmodel.CompanyName;
+            ContactName = vmodel.ContactName;
+            ContactTitle = vmodel.ContactTitle;
+            Address = vmodel.Address;
+            City = vmodel.City;
+            Region = vmodel.Region;
+            PostalCode = vmodel.PostalCode;
+            Country = vmodel.Country;
+            Phone = vmodel.Phone;
+            Fax = vmodel.Fax;
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿/*using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using POS.Repository;
@@ -7,97 +7,77 @@ using POS.ViewModel;
 
 namespace POS.Web.Controllers
 {
-    public class CategoryController : Controller
+    public class CustomerController : Controller
     {
-        private readonly CategoryService _service;
-        public CategoryController(ApplicationDbContext context)
+        private readonly CustomerService _service;
+        public CustomerController(ApplicationDbContext context)
         {
-            _service = new CategoryService(context);
+            _service = new CustomerService(context);
         }
 
-
-        // GET: CategoryController
+        // GET: CustomerController
         [HttpGet]
         public IActionResult Index()
         {
-            var Data = _service.GetCategories();
+            var Data = _service.GetCustomers();
             return View(Data);
         }
 
-        // GET: CategoryController/Details/5
+        // GET: CustomerController/Details/5
         [HttpGet]
         public IActionResult Details(int id)
         {
-            var CatDetail = _service.GetCategoryById(id);
-            return View(CatDetail);
+            var custDetail = _service.GetCustomerById(id);
+            return View(custDetail);
         }
 
-        // GET: CategoryController/Create
+        // GET: CustomerController/Create
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult AddModal()
         {
-            return View();
+            return PartialView("Create");
         }
 
-        // POST: CategoryController/Create
+        // POST: CustomerController/Create
         [HttpPost]
-        //public IActionResult Create(CategoryEntity request)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        _service.SaveCategory(request);
-        //    }
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Create(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Create([Bind("CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax")] CustomerModel request)
         {
             if (ModelState.IsValid)
             {
-                _service.SaveCategory(new CategoryEntity(request));
+                _service.AddCustomer(new CustomerEntity(request));
                 return Redirect("Index");
             }
             return View("Create", request);
         }
 
-        // GET: CategoryController/Edit/5
+        // GET: CustomerController/Edit/5
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var CatEdit = _service.GetCategoryById(id);
-            return View(CatEdit);
+            var custEdit = _service.GetCustomerById(id);
+            return View(custEdit);
         }
 
-        // POST: CategoryController/Edit/5
+        // POST: CustomerController/Edit/5
         [HttpPost]
-        //public IActionResult Update(CategoryEntity request)
-        //{
-        //    _service.UpdateCategory(request);
-        //    //return Redirect("Index");
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Update(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Update([Bind("Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax")] CustomerModel request)
         {
             if (ModelState.IsValid)
             {
-                CategoryEntity catEntity = new CategoryEntity(request);
-                catEntity.Id = request.Id;
-
-                _service.UpdateCategory(catEntity);
-                //return Redirect("Index");
-                return RedirectToAction("Index");
+                _service.UpdateCustomer(request);
+                return Redirect("Index");
             }
             return View("Edit", request);
         }
 
-        // GET: CategoryController/Delete/5
+        // GET: CustomerController/Delete/5
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            _service.DeleteCategoryById(id);
+            _service.DeleteCustomerById(id);
             return RedirectToAction("Index");
         }
     }
 }
-*/

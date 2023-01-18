@@ -43,14 +43,14 @@
             <div class="col-sm-6 mb-4">
                 <div class="form-group">
                     <label asp-for="BirthDate" class="floating-label" for="BirthDate">Birth Date</label>
-                    <input asp-for="BirthDate" class="form-control" id="BirthDate" />
+                    <input asp-for="BirthDate" type="date" class="form-control" id="BirthDate" />
                     <span asp-validation-for="BirthDate" class="text-danger"></span>
                 </div>
             </div>
             <div class="col-sm-6 mb-4">
                 <div class="form-group">
                     <label asp-for="HireDate" class="floating-label" for="HireDate">Hire Date</label>
-                    <input asp-for="HireDate" class="form-control" id="HireDate" />
+                    <input asp-for="HireDate" type="date" class="form-control" id="HireDate" />
                     <span asp-validation-for="HireDate" class="text-danger"></span>
                 </div>
             </div>
@@ -110,10 +110,10 @@
                     <span asp-validation-for="Photo" class="text-danger"></span>
                 </div>
             </div>
-            <div class="col-sm-12 mb-4">
+            <div class="col-sm-6 mb-4">
                 <div class="form-group">
                     <label asp-for="Notes" class="floating-label" for="Notes">Notes</label>
-                    <textarea asp-for="Notes" class="form-control" id="Notes" rows="2"></textarea>
+                    <input asp-for="Notes" class="form-control" id="Notes" />
                     <span asp-validation-for="Notes" class="text-danger"></span>
                 </div>
             </div>
