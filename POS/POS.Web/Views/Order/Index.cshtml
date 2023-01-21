@@ -1,0 +1,68 @@
+﻿@model IEnumerable<POS.Repository.OrderEntity>
+
+@{
+    ViewBag.Title = "Get All Orders";
+    Layout = "_Layout";
+}
+
+<div class="bg-success p-2 text-dark bg-opacity-25 card-header">
+    <h3>Get All Orders</h3>
+</div>
+<div class="card-body">
+    <div class="table-responsive">
+        <a asp-action="Create" class="btn btn-sm btn-outline-primary mt-2 mb-2" role="button"><i class="feather icon-plus"></i>New Order</a>
+        <table class="table table-hover mb-0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                    <th>Order Date</th>
+                    <th>Required Date</th>
+                    <th>Shipped Date</th>
+                    <th>Ship Via</th>
+                    <th>Freight</th>
+                    <th>Ship Name</th>
+                    <th>Ship Address</th>
+                    <th>Ship City</th>
+                    <th>Ship Region</th>
+                    <th>Ship Postal Code</th>
+                    <th>Ship Country</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.CustomerId</td>
+                        <td>@item.EmployeeId</td>
+                        <td>@item.OrderDate</td>
+                        <td>@item.RequiredDate</td>
+                        <td>@item.ShippedDate</td>
+                        <td>@item.ShipperId</td>
+                        <td>@item.Freight</td>
+                        <td>@item.ShipName</td>
+                        <td>@item.ShipAddress</td>
+                        <td>@item.ShipCity</td>
+                        <td>@item.ShipRegion</td>
+                        <td>@item.ShipPostalCode</td>
+                        <td>@item.ShipCountry</td>
+                        <td class="text-center">
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">
+                                <i class="feather icon-info">Detail</i>
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">
+                                <i class="feather icon-edit">Edit</i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">
+                                <i class="feather icon-trash">Delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

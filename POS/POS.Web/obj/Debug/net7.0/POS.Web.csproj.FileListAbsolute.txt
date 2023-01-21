@@ -260,4 +260,3 @@ F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\obj\Debug\net7.0\scopedcss
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\obj\Debug\net7.0\scopedcss\projectbundle\POS.Web.bundle.scp.css
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\bin\Debug\net7.0\POS.ViewModel.dll
 F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\bin\Debug\net7.0\POS.ViewModel.pdb
-F:\bootcamp\.net\bootcamp-project\POS.Web\POS\POS.Web\obj\Debug\net7.0\POS.Web.MvcApplicationPartsAssemblyInfo.cs

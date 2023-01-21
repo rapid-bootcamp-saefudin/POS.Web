@@ -203,15 +203,15 @@ namespace POS.Repository.Migrations
                     b.ToTable("tbl_employees");
                 });
 
-            modelBuilder.Entity("POS.Repository.OrderDetail", b =>
+            modelBuilder.Entity("POS.Repository.OrderDetailEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("id");
 
-                    b.Property<int>("Discount")
-                        .HasColumnType("int")
+                    b.Property<double>("Discount")
+                        .HasColumnType("double")
                         .HasColumnName("discount");
 
                     b.Property<int>("OrderId")
@@ -259,12 +259,12 @@ namespace POS.Repository.Migrations
                         .HasColumnType("longtext")
                         .HasColumnName("freight");
 
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime(6)")
+                    b.Property<DateOnly>("OrderDate")
+                        .HasColumnType("date")
                         .HasColumnName("order_date");
 
-                    b.Property<DateTime>("RequiredDate")
-                        .HasColumnType("datetime(6)")
+                    b.Property<DateOnly>("RequiredDate")
+                        .HasColumnType("date")
                         .HasColumnName("required_date");
 
                     b.Property<string>("ShipAddress")
@@ -297,16 +297,13 @@ namespace POS.Repository.Migrations
                         .HasColumnType("longtext")
                         .HasColumnName("ship_region");
 
-                    b.Property<int>("ShipVia")
-                        .HasColumnType("int")
-                        .HasColumnName("ship_via");
-
-                    b.Property<DateTime>("ShippedDate")
-                        .HasColumnType("datetime(6)")
+                    b.Property<DateOnly>("ShippedDate")
+                        .HasColumnType("date")
                         .HasColumnName("shipped_date");
 
-                    b.Property<int?>("ShipperEntityId")
-                        .HasColumnType("int");
+                    b.Property<int>("ShipperId")
+                        .HasColumnType("int")
+                        .HasColumnName("ship_id");
 
                     b.HasKey("Id");
 
@@ -314,7 +311,7 @@ namespace POS.Repository.Migrations
 
                     b.HasIndex("EmployeeId");
 
-                    b.HasIndex("ShipperEntityId");
+                    b.HasIndex("ShipperId");
 
                     b.ToTable("tbl_orders");
                 });
@@ -339,9 +336,8 @@ namespace POS.Repository.Migrations
                         .HasColumnType("longtext")
                         .HasColumnName("product_name");
 
-                    b.Property<string>("QuantityPerUnit")
-                        .IsRequired()
-                        .HasColumnType("longtext")
+                    b.Property<int>("QuantityPerUnit")
+                        .HasColumnType("int")
                         .HasColumnName("quantity_per_unit");
 
                     b.Property<int>("ReorderLevel")
@@ -462,7 +458,7 @@ namespace POS.Repository.Migrations
                     b.ToTable("tbl_suppliers");
                 });
 
-            modelBuilder.Entity("POS.Repository.OrderDetail", b =>
+            modelBuilder.Entity("POS.Repository.OrderDetailEntity", b =>
                 {
                     b.HasOne("POS.Repository.OrderEntity", "Order")
                         .WithMany("OrderDetails")
@@ -495,13 +491,17 @@ namespace POS.Repository.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("POS.Repository.ShipperEntity", null)
+                    b.HasOne("POS.Repository.ShipperEntity", "Shipper")
                         .WithMany("Orders")
-                        .HasForeignKey("ShipperEntityId");
+                        .HasForeignKey("ShipperId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Customer");
 
                     b.Navigation("Employee");
+
+                    b.Navigation("Shipper");
                 });
 
             modelBuilder.Entity("POS.Repository.ProductEntity", b =>

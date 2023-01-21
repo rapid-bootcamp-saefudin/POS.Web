@@ -5,16 +5,16 @@
     Layout = "_Layout";
 }
 
-<div class="card-header">
+<div class="bg-success p-2 text-dark bg-opacity-25 card-header">
     <h3>Product Detail</h3>
 </div>
 <div class="card-body">
     <div class="row d-flex justify-content-center">
         <div class="col-md-6">
             <div class="form-group row">
-                <label for="supId" class="col-sm-3 col-form-label"><strong>ID</strong></label>
+                <label for="ProductId" class="col-sm-3 col-form-label"><strong>ID</strong></label>
                 <div class="col-sm-9">
-                    <label id="supId" class="form-control-plaintext">@Model.Id</label>
+                    <label id="ProductId" class="form-control-plaintext">@Model.Id</label>
                 </div>
             </div>
             <hr />
@@ -26,28 +26,28 @@
             </div>
             <hr />
             <div class="form-group row">
-                <label for="QuantityPerUnit" class="col-sm-3 col-form-label"><strong>Quantity</strong></label>
+                <label for="QuantityPerUnit" class="col-sm-3 col-form-label"><strong>Quantity Per Unit</strong></label>
                 <div class="col-sm-9">
                     <label id="QuantityPerUnit" class="form-control-plaintext">@Model.QuantityPerUnit</label>
                 </div>
             </div>
             <hr />
             <div class="form-group row">
-                <label for="UnitPrice" class="col-sm-3 col-form-label"><strong>Price</strong></label>
+                <label for="UnitPrice" class="col-sm-3 col-form-label"><strong>Unit Price</strong></label>
                 <div class="col-sm-9">
                     <label id="UnitPrice" class="form-control-plaintext">@Model.UnitPrice</label>
                 </div>
             </div>
             <hr />
             <div class="form-group row">
-                <label for="UnitsInStock" class="col-sm-3 col-form-label"><strong>In Stock</strong></label>
+                <label for="UnitsInStock" class="col-sm-3 col-form-label"><strong>Units In Stock</strong></label>
                 <div class="col-sm-9">
                     <label id="UnitsInStock" class="form-control-plaintext">@Model.UnitsInStock</label>
                 </div>
             </div>
             <hr />
             <div class="form-group row">
-                <label for="UnitsOnOrder" class="col-sm-3 col-form-label"><strong>On Order</strong></label>
+                <label for="UnitsOnOrder" class="col-sm-3 col-form-label"><strong>Units On Order</strong></label>
                 <div class="col-sm-9">
                     <label id="UnitsOnOrder" class="form-control-plaintext">@Model.UnitsOnOrder</label>
                 </div>
@@ -68,14 +68,14 @@
             </div>
             <hr />
             <div class="form-group row">
-                <label for="SupplierId" class="col-sm-3 col-form-label"><strong>Supplier Id</strong></label>
+                <label for="SupplierId" class="col-sm-3 col-form-label"><strong>Supplier ID</strong></label>
                 <div class="col-sm-9">
                     <label id="SupplierId" class="form-control-plaintext">@Model.SupplierId</label>
                 </div>
             </div>
             <hr />
             <div class="form-group row">
-                <label for="CategoryId" class="col-sm-3 col-form-label"><strong>Category Id</strong></label>
+                <label for="CategoryId" class="col-sm-3 col-form-label"><strong>Category ID</strong></label>
                 <div class="col-sm-9">
                     <label id="CategoryId" class="form-control-plaintext">@Model.CategoryId</label>
                 </div>
@@ -83,4 +83,5 @@
             <hr />
         </div>
     </div>
+    <a type="reset" asp-controller="Product" asp-action="Index" class="btn btn-secondary">Back</a>
 </div>

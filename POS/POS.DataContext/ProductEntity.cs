@@ -25,7 +25,7 @@ namespace POS.Repository
         public int CategoryId { get; set; }
         public CategoryEntity Category { get; set; }
         [Column("quantity_per_unit")]
-        public string QuantityPerUnit { get; set; }
+        public int QuantityPerUnit { get; set; }
         [Column("unit_price")]
         public double UnitPrice { get; set; }
         [Column("units_in_stock")]
@@ -38,7 +38,7 @@ namespace POS.Repository
         public bool Discontinued { get; set; }
 
         //
-        public ICollection<OrderDetail> OrderDetails { get; set; }
+        public ICollection<OrderDetailEntity> OrderDetails { get; set; }
 
         //
         //public ProductEntity() { }

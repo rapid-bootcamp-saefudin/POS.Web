@@ -1,5 +1,6 @@
-﻿/*using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using POS.Repository;
 using POS.Service;
@@ -7,97 +8,94 @@ using POS.ViewModel;
 
 namespace POS.Web.Controllers
 {
-    public class CategoryController : Controller
+    public class OrderController : Controller
     {
-        private readonly CategoryService _service;
-        public CategoryController(ApplicationDbContext context)
+        private readonly OrderService _service;
+        private readonly CustomerService _customerService;
+        private readonly EmployeeService _employeeService;
+        private readonly ShipperService _shipperService;
+        private readonly ProductService _productService;
+
+        public OrderController(ApplicationDbContext context)
         {
-            _service = new CategoryService(context);
+            _service = new OrderService(context);
+            _customerService = new CustomerService(context);
+            _employeeService = new EmployeeService(context);
+            _shipperService = new ShipperService(context);
+            _productService = new ProductService(context);
         }
 
-
-        // GET: CategoryController
+        // GET: OrderController
         [HttpGet]
         public IActionResult Index()
         {
-            var Data = _service.GetCategories();
+            var Data = _service.GetOrders();
             return View(Data);
         }
 
-        // GET: CategoryController/Details/5
+        // GET: OrderController/Details/5
         [HttpGet]
-        public IActionResult Details(int id)
+        public IActionResult Details(int? id)
         {
-            var CatDetail = _service.GetCategoryById(id);
-            return View(CatDetail);
+            var orderDetail = _service.GetOrderById(id);
+            return View(orderDetail);
         }
 
-        // GET: CategoryController/Create
+        // GET: OrderController/Create
         [HttpGet]
         public IActionResult Create()
         {
+            ViewBag.Customer = new SelectList(_customerService.GetCustomers(), "Id", "ContactName");
+            ViewBag.Employee = new SelectList(_employeeService.GetEmployees(), "Id", "LastName");
+            ViewBag.Shipper = new SelectList(_shipperService.GetShippers(), "Id", "CompanyName");
+            ViewBag.Product = new SelectList(_productService.GetProducts(), "Id", "ProductName");
             return View();
         }
 
-        // POST: CategoryController/Create
+        // POST: OrderController/Create
         [HttpPost]
-        //public IActionResult Create(CategoryEntity request)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        _service.SaveCategory(request);
-        //    }
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Create(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Save([Bind("CustomerId, EmployeeId, OrderDate, RequiredDate, ShippedDate, ShipperId, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry, OrderDetails")] OrderModel request)
         {
             if (ModelState.IsValid)
             {
-                _service.SaveCategory(new CategoryEntity(request));
+                _service.AddOrder(request);
                 return Redirect("Index");
             }
             return View("Create", request);
         }
 
-        // GET: CategoryController/Edit/5
+        // GET: OrderController/Edit/5
         [HttpGet]
-        public IActionResult Edit(int id)
+        public IActionResult Edit(int? id)
         {
-            var CatEdit = _service.GetCategoryById(id);
-            return View(CatEdit);
+            ViewBag.Customer = new SelectList(_customerService.GetCustomers(), "Id", "ContactName");
+            ViewBag.Employee = new SelectList(_employeeService.GetEmployees(), "Id", "LastName");
+            ViewBag.Shipper = new SelectList(_shipperService.GetShippers(), "Id", "CompanyName");
+            ViewBag.Product = new SelectList(_productService.GetProducts(), "Id", "ProductName");
+            var order = _service.GetOrderById(id);
+            return View(order);
         }
 
-        // POST: CategoryController/Edit/5
+        // POST: OrderController/Edit/5
         [HttpPost]
-        //public IActionResult Update(CategoryEntity request)
-        //{
-        //    _service.UpdateCategory(request);
-        //    //return Redirect("Index");
-        //    return RedirectToAction("Index");
-        //}
-
-        public IActionResult Update(CategoryModel request)
+        [ValidateAntiForgeryToken]
+        public IActionResult Update([Bind("Id, CustomerId, EmployeeId, OrderDate, RequiredDate, ShippedDate, ShipperId, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry, OrderDetails")] OrderModel request)
         {
             if (ModelState.IsValid)
             {
-                CategoryEntity catEntity = new CategoryEntity(request);
-                catEntity.Id = request.Id;
-
-                _service.UpdateCategory(catEntity);
-                //return Redirect("Index");
-                return RedirectToAction("Index");
+                _service.UpdateOrder(request);
+                return Redirect("Index");
             }
             return View("Edit", request);
         }
 
-        // GET: CategoryController/Delete/5
+        // GET: OrderController/Delete/5
         [HttpGet]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(int? id)
         {
-            _service.DeleteCategoryById(id);
+            _service.DeleteOrderById(id);
             return RedirectToAction("Index");
         }
     }
 }
-*/

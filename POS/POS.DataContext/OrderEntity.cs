@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -23,13 +24,14 @@ namespace POS.Repository
         public EmployeeEntity Employee { get; set; }
 
         [Column("order_date")]
-        public DateTime OrderDate { get; set; }
+        public DateOnly OrderDate { get; set; }
         [Column("required_date")]
-        public DateTime RequiredDate { get; set; }
+        public DateOnly RequiredDate { get; set; }
         [Column("shipped_date")]
-        public DateTime ShippedDate { get; set; }
-        [Column("ship_via")]
-        public int ShipVia { get; set; }
+        public DateOnly ShippedDate { get; set; }
+        [Column("ship_id")]
+        public int ShipperId { get; set; }
+        public ShipperEntity Shipper { get; set; }
 
         [Column("freight")]
         public string Freight { get; set; }
@@ -47,6 +49,26 @@ namespace POS.Repository
         public string ShipCountry { get; set; }
 
         //
-        public ICollection<OrderDetail> OrderDetails { get; set; }
+        public List<OrderDetailEntity> OrderDetails { get; set; }
+
+        //
+        public OrderEntity() { }
+
+        //public OrderEntity(OrderModel vmodel)
+        //{
+        //    CustomerId = vmodel.CustomerId;
+        //    EmployeeId = vmodel.EmployeeId;
+        //    OrderDate = vmodel.OrderDate;
+        //    RequiredDate = vmodel.RequiredDate;
+        //    ShippedDate = vmodel.ShippedDate;
+        //    ShipperId = vmodel.ShipperId;
+        //    Freight = vmodel.Freight;
+        //    ShipName = vmodel.ShipName;
+        //    ShipAddress = vmodel.ShipAddress;
+        //    ShipCity = vmodel.ShipCity;
+        //    ShipRegion = vmodel.ShipRegion;
+        //    ShipPostalCode = vmodel.ShipPostalCode;
+        //    ShipCountry = vmodel.ShipCountry;
+        //}
     }
 }
