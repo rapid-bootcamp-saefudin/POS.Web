@@ -37,7 +37,7 @@ namespace POS.Web.Controllers
         [HttpGet]
         public IActionResult Details(int? id)
         {
-            var orderDetail = _service.GetOrderById(id);
+            var orderDetail = _service.ReadOrderInvoice(id);
             return View(orderDetail);
         }
 

@@ -15,27 +15,27 @@ namespace POS.Service
 
         private OrderModel EntityOrderToModelOrder(OrderEntity entity)
         {
-            OrderModel result = new OrderModel();
-            result.Id = entity.Id;
-            result.CustomerId = entity.CustomerId;
-            result.EmployeeId = entity.EmployeeId;
-            result.OrderDate = entity.OrderDate;
-            result.RequiredDate = entity.RequiredDate;
-            result.ShippedDate = entity.ShippedDate;
-            result.ShipperId = entity.ShipperId;
-            result.Freight = entity.Freight;
-            result.ShipName = entity.ShipName;
-            result.ShipAddress = entity.ShipAddress;
-            result.ShipCity = entity.ShipCity;
-            result.ShipRegion = entity.ShipRegion;
-            result.ShipPostalCode = entity.ShipPostalCode;
-            result.ShipCountry = entity.ShipCountry;
+            OrderModel model = new OrderModel();
+            model.Id = entity.Id;
+            model.CustomerId = entity.CustomerId;
+            model.EmployeeId = entity.EmployeeId;
+            model.OrderDate = entity.OrderDate;
+            model.RequiredDate = entity.RequiredDate;
+            model.ShippedDate = entity.ShippedDate;
+            model.ShipperId = entity.ShipperId;
+            model.Freight = entity.Freight;
+            model.ShipName = entity.ShipName;
+            model.ShipAddress = entity.ShipAddress;
+            model.ShipCity = entity.ShipCity;
+            model.ShipRegion = entity.ShipRegion;
+            model.ShipPostalCode = entity.ShipPostalCode;
+            model.ShipCountry = entity.ShipCountry;
             foreach (var item in entity.OrderDetails)
             {
-                result.OrderDetails.Add(EntityOrderDetailToModelOrderDetail(item));
+                model.OrderDetails.Add(EntityOrderDetailToModelOrderDetail(item));
             }
 
-            return result;
+            return model;
         }
 
         private OrderEntity ModelOrderToEntityOrder(OrderModel model)
@@ -67,6 +67,7 @@ namespace POS.Service
         {
             var model = new OrderDetailModel();
             model.Id = entity.Id;
+            //model.OrderId = entity.OrderId;
             model.ProductId = entity.ProductId;
             model.UnitPrice = entity.UnitPrice;
             model.Quantity = entity.Quantity;
@@ -118,10 +119,11 @@ namespace POS.Service
                 item.Subtotal = item.Quantity * item.UnitPrice * (1 - item.Discount / 100);
                 subtotal += item.Subtotal;
             }
-
             response.Subtotal = subtotal;
+            response.Tax = 0.1 * subtotal;
             response.Shipping = 0;
-            response.Total = response.Subtotal + response.Shipping;
+            response.Total = response.Subtotal + response.Tax + response.Shipping;
+
             return response;
         }
 
@@ -215,8 +217,8 @@ namespace POS.Service
             entityOrder.ShipPostalCode = updatedEntity.ShipPostalCode;
             entityOrder.ShipCountry = updatedEntity.ShipCountry;
             entityOrder.OrderDetails = updatedEntity.OrderDetails;
-
             _context.Orders.Update(entityOrder);
+
             foreach (var newItem in entityOrder.OrderDetails)
             {
                 newItem.OrderId = order.Id;

@@ -29,6 +29,10 @@ namespace POS.Repository
         public DateOnly RequiredDate { get; set; }
         [Column("shipped_date")]
         public DateOnly ShippedDate { get; set; }
+
+
+
+        // shipper_id?
         [Column("ship_id")]
         public int ShipperId { get; set; }
         public ShipperEntity Shipper { get; set; }
@@ -53,22 +57,5 @@ namespace POS.Repository
 
         //
         public OrderEntity() { }
-
-        //public OrderEntity(OrderModel vmodel)
-        //{
-        //    CustomerId = vmodel.CustomerId;
-        //    EmployeeId = vmodel.EmployeeId;
-        //    OrderDate = vmodel.OrderDate;
-        //    RequiredDate = vmodel.RequiredDate;
-        //    ShippedDate = vmodel.ShippedDate;
-        //    ShipperId = vmodel.ShipperId;
-        //    Freight = vmodel.Freight;
-        //    ShipName = vmodel.ShipName;
-        //    ShipAddress = vmodel.ShipAddress;
-        //    ShipCity = vmodel.ShipCity;
-        //    ShipRegion = vmodel.ShipRegion;
-        //    ShipPostalCode = vmodel.ShipPostalCode;
-        //    ShipCountry = vmodel.ShipCountry;
-        //}
     }
 }

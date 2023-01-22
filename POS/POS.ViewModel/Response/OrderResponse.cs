@@ -28,6 +28,7 @@ namespace POS.ViewModel.Response
 
         //
         public double Subtotal { get; set; }
+        public double Tax { get; set; }
         public double Shipping { get; set; }
         public double Total { get; set; }
     }

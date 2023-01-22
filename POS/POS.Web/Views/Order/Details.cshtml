@@ -1,0 +1,99 @@
+﻿@model POS.ViewModel.Response.OrderResponse
+@{
+}
+
+<div class="card-body">
+    <div class="container mb-5 mt-3">
+        <div class="row d-flex align-items-baseline">
+            <div class="col-xl-9">
+                <p style="color: #7e8d9f;font-size: 16px;">Invoice >> <strong>ORDER ID: @Model.Id</strong></p>
+            </div>
+            <div class="col-xl-3 float-end">
+                <ul class="list-unstyled">
+                    <li class="text-muted">
+                        From: <span style="font-size: 24px; color:#5d9fc5;">@Model.ContactName</span> | @Model.OrderDate</span>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+
+        <div class="container">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <i class="fab fa-mdb fa-4x ms-0" style="color:#5d9fc5 ;"></i>
+                    <p class="pt-0">POS.Web Invoice</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-8">
+                    <ul class="list-unstyled">
+                        <li class="text-muted">To: <span style="color:#5d9fc5 ;">@Model.ShipName</span></li>
+                        <li class="text-muted">@Model.ShipAddress, @Model.ShipCity</li>
+                        <li class="text-muted">@Model.ShipRegion, @Model.ShipCountry</li>
+                        <li class="text-muted"><i class="fas fa-phone"></i>@Model.ShipPostalCode</li>
+                    </ul>
+                </div>
+                <div class="col-xl-4">
+                    <p class="text-muted ms-3">Shipping</p>
+                    <ul class="list-unstyled">
+                        <li class="text-muted ms-3"><span class="text-black">Via: &nbsp;&nbsp;</span>@Model.ShipperName</li>
+                        <li class="text-muted ms-3 mt-2"><span class="text-black">Phone: &nbsp;&nbsp;</span>@Model.ShipperPhone</li>
+                        <li class="text-muted ms-3 mt-2"><span class="text-black">Required Date: &nbsp;&nbsp;</span>@Model.RequiredDate</li>
+                        <li class="text-muted ms-3 mt-2"><span class="text-black">Shipped Date: &nbsp;&nbsp;</span>@Model.ShippedDate</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row my-2 mx-1 justify-content-center">
+                <table class="table table-striped table-borderless">
+                    <thead style="background-color:#84B0CA ;" class="text-white">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Unit Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Discount</th>
+                            <th scope="col">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Details)
+                        {
+                            <tr>
+                                <th scope="row">#</th>
+                                <td>@item.ProductName</td>
+                                <td>Rp @item.UnitPrice</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.Discount %</td>
+                                <td>Rp @item.Subtotal</td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-xl-8">
+                    <p class="ms-3">Add additional notes and payment information</p>
+
+                </div>
+                <div class="col-xl-3">
+                    <ul class="list-unstyled">
+                        <li class="text-muted ms-3"><span class="text-black me-4">SubTotal</span>Rp @Model.Subtotal</li>
+                        <li class="text-muted ms-3 mt-2"><span class="text-black me-4">Tax(15%)</span>Rp @Model.Tax</li>
+                        <li class="text-black ms-3 mt-2"><span class="text-black me-4">Total Amount</span><strong><span style="font-size: 18px;">Rp @Model.Total</span></strong></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p>Thank you for your purchase</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
